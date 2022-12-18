@@ -57,6 +57,16 @@ html {
   scroll-behavior: smooth;
 }
 
+iframe{
+  width: 100%;
+  height: 330px;
+  margin: 0px, 0px;
+}
+
+video{
+  width: 100%;
+  height: auto;
+}
 #myVideo{
   position: static;
   margin-top: 5rem;
@@ -329,8 +339,7 @@ footer{
 @media only screen and (max-width: 900px) {
   .index-container{
     flex-wrap: wrap;
-    margin: 0, 0;
-    padding: 0, 0;
+    margin: auto;
   }
 
 
