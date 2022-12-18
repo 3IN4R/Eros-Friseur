@@ -543,7 +543,7 @@ footer{
 
   /* Service menus */
 .index-services{
-  display: flex;
+  display:flex;
   justify-content: center;
   padding-bottom: 3rem;
 }
@@ -703,21 +703,34 @@ footer{
 
 /* Styling for Cards in Index and about */
 
+.serviceintro{
+ text-align: center;
+}
+
+.serviceintro-2{
+  margin-top: 8rem;
+  text-align: center;
+ }
+
+.ser{
+  font-family: Oswald-Medium;
+  font-size: 2rem;
+}
+
 .customer-selection{
   display: flex;
-  justify-content: center;
-  margin: auto;
+  justify-content: space-evenly;
+  padding: 1rem 2.0rem;
   margin-bottom: 2rem;
-  width: 50%;
+  width: 100%;
 }
 
 .customer{
   font-family: Oswald-Medium;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffffff;
   background-color:#081120;
   border:2px solid rgb(251, 249, 255) ;
-  padding: 0.5rem 0.5rem;
   text-align: center;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -731,8 +744,8 @@ footer{
 
 .customer-selection-services{
   display: flex;
-  justify-content: center;
-  margin-top: 10rem;
+  justify-content: space-evenly;
+  margin-top: 3rem;
 }
 
 .customer-services{
@@ -754,6 +767,10 @@ footer{
     transition-property: background-color;
 }
 
+.gif{
+  width: 10rem;
+  height: 10rem;
+}
 /* Styling for Cards in Index and about ends */
 
 

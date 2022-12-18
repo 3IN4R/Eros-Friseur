@@ -11,9 +11,10 @@ hamburger.onclick = function() {
 
   navbarMenuStyleChange();
 
-  var slidePosition = 0;
-  SlideShow();
-  
+ 
+//Function to make a slideshow of images//
+
+  let slidePosition = 0; 
   function SlideShow() {
     var i;
     var slides = document.getElementsByClassName("Containers");
@@ -26,4 +27,4 @@ hamburger.onclick = function() {
     setTimeout(SlideShow, 5000); // Change image every 5 seconds
   } 
 
-
+SlideShow();
