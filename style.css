@@ -53,81 +53,131 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+#myVideo{
+  position: static;
+  margin-top: 5rem;
+  z-index: 0;
+}
 
+/* Nav */
 
-  
-/* Skillpage */  
-
-.container-skillstext {
-  text-decoration: none;
-  color:#ffffff;
+header {
   font-family: Oswald-Medium;
-  background-color: #00000096;
-  padding: 5rem 2rem;
-  margin:  2rem 4rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 100px;
+  background: #061021;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px;
+  position: fixed;
+  top: 0;
 }
 
-.container-abouttext {
+.logo {
+  padding-top: 2px;
+  padding-left: 1.5rem;
+}
+
+.logo-img{
+width:8rem;
+height: auto;
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #B99C3F;
+  font-size: 20px;
+  padding: 10px 25px;
+  transition: 0.2s;
+  margin: 0 5px;
   text-decoration: none;
-  color:#ffffff;
-  font-family: Oswald-Medium;
-  background-color: #00000096;
-  padding: 5rem 2rem;
-  margin:  3rem 6rem;
-  border-radius: 0.5rem;
-  justify-content: center;
-}
-
-.skillstext {
-  font-size: 25px;
-  text-align: center;
-}
-.abouttext {
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-.container-skillicons{
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    position: absolute;
-
-}
-
-.skill {
-  transition: transform 0.5s ease-in;
-}
-
-.skill:hover{  
-      transform: rotate(360deg);
   
 }
 
-.skill{
-  height: 100px;
-  width: 100px;
-  margin-right: 1rem;
+.nav-bar ul li a:hover {
+  color: #ffffff;
+  background: #B99C3F;
 }
 
-.react{
-  height: 100px;
-  width: 100px;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  margin-right: 1rem;
+.nav-bar ul li a.active {
+  color: #ffffff;
+  background: #B99C3F;
 }
 
+@media only screen and (max-width: 1320px) {
+  header{
+      padding: 0 0px;
+  }
+}
 
+@media only screen and (max-width: 1100px) {
+  header{
+      padding: 0 0px;
+  }
+}
 
+@media only screen and (max-width: 900px) {
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 3rem;
+  }
+  .nav-bar {
+      height: 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: black;
+      transition: 0.2s;
+      overflow: hidden;
+  }
+  .nav-bar.active {
+      height: 520px;
+      width: 100%;
+  }
+  .nav-bar ul {
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.1s;
+      opacity: 0;
+  }
+  .nav-bar.active ul {
+      opacity: 1;
+  }
+  .nav-bar ul li a {
+      margin-bottom: 12px;
+      color: rgb(255, 255, 255);
+  }
+  header {
+      background: rgb(0, 0, 0);
+  }
+}
+/* Navbar-ends */
 
-
-/* Skillpage-ends */  
 
 /*Footer*/
 footer{
@@ -241,126 +291,12 @@ footer{
        background: rgb(0, 0, 0);
     }
  }
-/* Footer End*/
+/* Footer Ends*/
 
-/* Nav */
-
-header {
-    font-family: Oswald-Medium;
-    width: 100%;
-    height: 100px;
-    background: #061021;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 0px;
-    position: fixed;
-    top: 0;
-}
-
-.logo {
-    padding-top: 2px;
-    padding-left: 1.5rem;
-}
-
-.logo-img{
-  width:8rem;
-  height: auto;
-}
-
-
-.hamburger {
-    display: none;
-}
-
-.nav-bar ul {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-bar ul li a {
-    display: block;
-    color: #B99C3F;
-    font-size: 20px;
-    padding: 10px 25px;
-    transition: 0.2s;
-    margin: 0 5px;
-    text-decoration: none;
-    
-}
-
-.nav-bar ul li a:hover {
-    color: #ffffff;
-    background: #B99C3F;
-}
-
-.nav-bar ul li a.active {
-    color: #ffffff;
-    background: #B99C3F;
-}
-
-@media only screen and (max-width: 1320px) {
-    header{
-        padding: 0 0px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    header{
-        padding: 0 0px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger .line {
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 6px 3rem;
-    }
-    .nav-bar {
-        height: 0;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background: black;
-        transition: 0.2s;
-        overflow: hidden;
-    }
-    .nav-bar.active {
-        height: 520px;
-        width: 100%;
-    }
-    .nav-bar ul {
-        display: block;
-        width: fit-content;
-        margin: 80px auto 0 auto;
-        text-align: center;
-        transition: 0.1s;
-        opacity: 0;
-    }
-    .nav-bar.active ul {
-        opacity: 1;
-    }
-    .nav-bar ul li a {
-        margin-bottom: 12px;
-        color: rgb(255, 255, 255);
-    }
-    header {
-        background: rgb(0, 0, 0);
-    }
-}
-/* Navbar-ends */
 
 /* Main-content */
 
-/* Intro-card */
+/* Intro section below video */
 .index-container{
     display: flex; 
     flex-wrap: nowrap;
@@ -529,37 +465,11 @@ header {
   }
 }
 
-.btnbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 0.2rem 0.2rem;
-  margin-top: 3rem;
-  text-align: center;
-  
-}
-
-.btn {
-  font-family: Oswald-Medium;
-  border:2px solid rgb(251, 249, 255) ;
-  border-radius: 6rem;
-  color: white;
-  padding: 0.1rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-
-.btn:hover {
-  background-color: rgb(84, 0, 210);
-}
-
 
 .img-container {
   padding: 0rem 0rem;
 }
-.me{
+.owner{
     animation-name: FadeIn;
     animation-duration: 3s;
     transition-timing-function: linear;
@@ -568,119 +478,8 @@ header {
   }
 
 
-  .aboutme{
-    animation-name: FadeIn;
-    animation-duration: 3s;
-    transition-timing-function: linear;
-    border-radius: 50cm;
-    height: auto;
-    width: 100%;
-    border:2px solid rgb(251, 249, 255) ;
-  }
-
     
   /* Intro-card-ends */
-
-
-
-  /*Blinkr-end*/
-
-  /* Projects-list */
-
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5rem 1.3rem;
-    
-  }
-
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 7rem 1.3rem;
-    
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 1rem 1rem;
-    text-align: center;
-    color: #ffffff;
-    background-color: #0000006f;
-    transition: transform .5s; 
-    border-radius: 0.5rem;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 1rem 1rem;
-  }
-
-  .cardcont {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-    margin: 1rem 1rem;
-    text-align: center;
-    color: #ffffff;
-    background-color: #0000006f;
-    transition: transform .5s; 
-    border-radius: 0.5rem;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 10rem 10rem;
-  }
-
-  .cardcont h1{
-    margin-bottom: 2.5rem;
-  }
-
-  .card p {
-    margin-top: 0.2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .cardcont p {
-    margin-top: 0.2rem;
-    margin-bottom: 1.8rem;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
-  }
-
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .cardcont button {
-    border: none;
-    outline: 0;
-    padding: 10px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    margin-top: 5rem;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
-
-  .cardcont button:hover {
-    opacity: 0.7;
-  }
-
 
 
   /* Home banner */
@@ -742,7 +541,7 @@ header {
   
   /* Home banner ends */
 
-  /* Service menu */
+  /* Service menus */
 .index-services{
   display: flex;
   justify-content: center;
@@ -798,163 +597,6 @@ header {
   /* Service menu ends */
 
 /* Gallery */
-
-.img-carousel {
-  margin-top: 0rem;
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container-carousel {
-  position: static;
-  width: 70%;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: static;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: static;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.gallery{
-  color: #ffffff;
-  text-align: center;
-  margin-top: 10rem;
-}
-
-.customer-selection{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-bottom: 2rem;
-  width: 50%;
-}
-
-.customer{
-  font-family: Oswald-Medium;
-  font-size: 3rem;
-  color: #ffffff;
-  background-color:#081120;
-  border:2px solid rgb(251, 249, 255) ;
-  padding: 0.5rem 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem 3rem;
-}
-.customer:hover{
-  background-color: #B99C3F;
-  color: #081120;
-    transition-duration: 0.8s;
-    transition-property: background-color;
-}
-
-.customer-selection-services{
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-}
-
-.customer-services{
-  font-family: Oswald-Medium;
-  font-size: 3rem;
-  color: #ffffff;
-  background-color:#081120;
-  border:2px solid rgb(251, 249, 255) ;
-  padding: 0.5rem 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem 3rem;
-}
-
-.customer-services:hover{
-  background-color: #B99C3F;
-  color: #081120;
-    transition-duration: 0.8s;
-    transition-property: background-color;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-#myVideo{
-  position: static;
-  margin-top: 5rem;
-  z-index: 0;
-}
 
 .galnav{
   position: relative;
@@ -1028,7 +670,7 @@ html {
   height: 16px;
   width: 16px;
   margin: 0 3px;
-  background-color: #acc;
+  background-color:#081120;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
@@ -1036,7 +678,7 @@ html {
 }
 
 .enable, .dots:hover {
-  background-color: #717161;
+  background-color:#B99C3F;
 }
 
 /* Faint animation */
@@ -1056,3 +698,62 @@ html {
   from {opacity: .5}
   to {opacity: 2}
 }
+
+/* Gallery Ends */
+
+/* Styling for Cards in Index and about */
+
+.customer-selection{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.customer{
+  font-family: Oswald-Medium;
+  font-size: 3rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.customer:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.customer-selection-services{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.customer-services{
+  font-family: Oswald-Medium;
+  font-size: 3rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+
+.customer-services:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+/* Styling for Cards in Index and about ends */
+
+
