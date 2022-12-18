@@ -512,8 +512,8 @@ footer{
   }
 
   .slogan{
-    font-family: 'Ephesis', cursive;
-    font-size: 4rem;
+    font-family: 'STIX Two Text', serif;
+    font-size: 2.5rem;
     color: rgb(0, 0, 0);
     margin: 3rem;
   }
@@ -726,12 +726,15 @@ footer{
 /* Styling for Cards in Index and about */
 
 .serviceintro{
- text-align: center;
+  display: flex;
+ justify-content: center;
+
 }
 
 .serviceintro-2{
+  display: flex;
   margin-top: 8rem;
-  text-align: center;
+  justify-content: center;
  }
 
 .ser{
