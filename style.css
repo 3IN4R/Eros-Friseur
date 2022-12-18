@@ -2,6 +2,10 @@
     font-family: 'Oswald-Medium';
     src: url('resources//Oswald-Medium.ttf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@0,100;1,500&family=STIX+Two+Text&display=swap');
+
+
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -76,7 +80,7 @@ video{
 /* Nav */
 
 header {
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
   width: 100%;
   height: 100px;
   background: #061021;
@@ -285,6 +289,7 @@ footer{
 
 .requisits {
   padding-top: 1rem;
+  font-family: 'STIX Two Text', serif;
 }
 
 .opening-hours{
@@ -307,6 +312,10 @@ footer{
 /* Main-content */
 
 /* Intro section below video */
+
+.me{
+  width: 50%;
+}
 .index-container{
     display: flex; 
     flex-wrap: nowrap;
@@ -347,7 +356,7 @@ footer{
 
 
 .introheading {
-    font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
     font-size: 4vw;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -356,7 +365,7 @@ footer{
 }
 
 .introheading-2 {
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
   font-size: 4vw;
   color: rgb(255, 255, 255);
   text-align: left;
@@ -365,7 +374,7 @@ footer{
 }
 
 .introheading2 {
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
     font-size: 2vw;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -373,7 +382,7 @@ footer{
     padding-top: 1rem;
 }
 .introheading2-2 {
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
     font-size: 2vw;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -386,7 +395,7 @@ footer{
 }
 
 .textoid {
-  font-family: Oswald-Medium;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: #ffffff;
   text-align: left;
@@ -395,7 +404,7 @@ footer{
 }
 
 .textoid-2 {
-  font-family: Oswald-Medium;
+  font-family: 'Roboto', sans-serif;;
   font-size: 20px;
   color: #ffffff;
   text-align: left;
@@ -503,28 +512,29 @@ footer{
   }
 
   .slogan{
-    font-size: 3rem;
+    font-family: 'Ephesis', cursive;
+    font-size: 4rem;
     color: rgb(0, 0, 0);
     margin: 3rem;
   }
 
   .wbtn {
-    font-family: Oswald-Medium;
+    font-family: 'STIX Two Text', serif;
     border:2px solid rgb(251, 249, 255) ;
     color: white;
     background-color: #081120;
-    padding: 0.1rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     text-decoration: none;
     font-size: 3rem;
   }
 
   .wsbtn {
-    font-family: Oswald-Medium;
+    font-family: 'STIX Two Text', serif;
     border:2px solid rgb(251, 249, 255) ;
     color: white;
     background-color: #081120;
-    padding: 0.1rem 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     font-size: 3rem;
   }
@@ -560,30 +570,33 @@ footer{
   .table{
     border-collapse: collapse;
     width: 35%;
+    font-family: 'Roboto', sans-serif;
   }
 
   .parent-table{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    
   }
   .service-table{
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 35%;
     border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
   }
   .table td,.table th{
     padding: 12px 15px;
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
   }
   .service-table td,.service-table th{
     padding: 12px 15px;
     border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
   }
   .table th{
     background-color: #B99C3F;
@@ -722,8 +735,8 @@ footer{
  }
 
 .ser{
-  font-family: Oswald-Medium;
-  font-size: 2rem;
+  font-family: 'Ephesis', cursive;
+  font-size: 8rem;
 }
 
 .customer-selection{
@@ -735,7 +748,7 @@ footer{
 }
 
 .customer{
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
   font-size: 2rem;
   color: #ffffff;
   background-color:#081120;
@@ -758,7 +771,7 @@ footer{
 }
 
 .customer-services{
-  font-family: Oswald-Medium;
+  font-family: 'STIX Two Text', serif;
   font-size: 3rem;
   color: #ffffff;
   background-color:#081120;
