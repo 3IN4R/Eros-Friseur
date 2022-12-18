@@ -70,12 +70,15 @@ iframe{
 video{
   width: 100%;
   height: auto;
-}
-#myVideo{
-  position: static;
-  margin-top: 5rem;
+  position:relative;
   z-index: 0;
 }
+
+#reviews{
+  z-index: 0;
+}
+
+
 
 /* Nav */
 
@@ -83,14 +86,20 @@ header {
   font-family: 'STIX Two Text', serif;
   width: 100%;
   height: 100px;
-  background: #061021;
   display: flex;
+  background-color: #061021;
   align-items: center;
   justify-content: space-between;
   padding: 0px 0px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
+/*
+.hdr{
+  background-color: #06102100;
+} */
+
 
 .logo {
   padding-top: 2px;
@@ -163,11 +172,12 @@ height: auto;
       left: 0;
       right: 0;
       width: 100vw;
-      background: black;
+      background:#061021;
       transition: 0.2s;
       overflow: hidden;
   }
   .nav-bar.active {
+      z-index: 1;
       height: 520px;
       width: 100%;
   }
@@ -187,7 +197,7 @@ height: auto;
       color: rgb(255, 255, 255);
   }
   header {
-      background: rgb(0, 0, 0);
+      background-color: #081120;
   }
 }
 /* Navbar-ends */
@@ -303,7 +313,7 @@ footer{
     }
 
     footer{
-       background: rgb(0, 0, 0);
+       background: #081120;
     }
  }
 /* Footer Ends*/
@@ -561,6 +571,14 @@ footer{
   /* Home banner ends */
 
   /* Service menus */
+
+.servicesec{
+  background-color: #061021;
+  margin: 1rem 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
 .index-services{
   display:flex;
   justify-content: center;
@@ -740,6 +758,12 @@ footer{
 .ser{
   font-family: 'Ephesis', cursive;
   font-size: 8rem;
+}
+
+.ser2{
+  font-family: 'Ephesis', cursive;
+  font-size: 8rem;
+  color: #B99C3F;
 }
 
 .customer-selection{
