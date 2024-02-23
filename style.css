@@ -1,0 +1,1304 @@
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('resources//Oswald-Medium.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@0,100;1,500&family=STIX+Two+Text&display=swap');
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+html {
+  scroll-behavior: smooth;overflow-x: hidden;
+}
+
+iframe{
+  width: 100%;
+  height: 330px;
+  margin: 0px, 0px;
+}
+
+
+video{
+  width: 100%;
+  height: auto;
+  position:relative;
+  z-index: 0;
+}
+
+/* Hiding video on smaller screens */
+@media only screen and (max-width: 900px) {
+video{
+  display: none;
+}
+}
+
+
+
+
+
+/* Nav */
+
+header {
+  font-family: 'STIX Two Text', serif;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #061021;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.hdr{
+  background-color: #06102100;
+} 
+
+
+.logo {
+  padding-top: 2px;
+  padding-left: 1.5rem;
+}
+
+.logo-img{
+width:8rem;
+height: auto;
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #B99C3F;
+  font-size: 20px;
+  padding: 10px 25px;
+  transition: 0.2s;
+  margin: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.nav-bar ul li a:hover {
+  color: #ffffff;
+  background: #B99C3F;
+  border-radius: .2rem;
+}
+
+.nav-bar ul li a.active {
+  color: #ffffff;
+  background: #B99C3F;
+  border-radius: .2rem;
+}
+
+@media only screen and (max-width: 1320px) {
+  header{
+      padding: 0 0px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header{
+      padding: 0 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 6px 3rem;
+      margin-right: 5rem;
+  }
+  .nav-bar {
+      height: 0;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background:#061021;
+      transition: 0.2s;
+      overflow: hidden;
+  }
+  .nav-bar.active {
+      z-index: 1;
+      height: 520px;
+      width: 100%;
+  }
+  .nav-bar ul {
+      display: block;
+      width: fit-content;
+      margin: 80px auto 0 auto;
+      text-align: center;
+      transition: 0.1s;
+      opacity: 0;
+  }
+  .nav-bar.active ul {
+      opacity: 1;
+  }
+  .nav-bar ul li a {
+      margin-bottom: 12px;
+      color: rgb(255, 255, 255);
+  }
+  header {
+      background-color: #081120;
+  }
+}
+
+.dk{
+  width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 100rem;
+        cursor: pointer;
+}
+/* Navbar-ends */
+
+
+/*Footer*/
+footer{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #081120;
+    width: 100%;
+    color: #B99C3F;
+}
+
+.fa {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.fa-map-marker{
+  color: #ffffff;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #081120;
+    justify-content: space-evenly;
+}
+
+.footer-text a{
+  color:#ffffff;
+}
+
+.footer-text{
+  text-align: start;
+}
+
+.footer-header{
+  padding-bottom: 0.2rem;
+  z-index: 99;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.socials a i{
+    font-size: 2.0rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #b49d4f;
+}
+
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+ }
+ .footer-bottom p a{
+   color:#ffffff;
+   font-size: 15px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+.requisits {
+  padding-top: 1rem;
+  font-family: 'STIX Two Text', serif;
+}
+
+.opening-hours{
+  padding-top: 1rem;
+}
+
+ @media only screen and (max-width: 900px) {
+    .aboutfoot{
+      position: absolute;
+      margin-bottom: 0;
+    }
+
+    footer{
+       background: #081120;
+    }
+ }
+/* Footer Ends*/
+
+
+/* Main-content */
+#reviews{
+  z-index: 0;
+}
+/* Intro section below video */
+
+.me{
+  width: 100%;
+  z-index: 0;
+}
+.me2{
+  width: 100%;
+  height: auto;
+  order: 4;
+}
+.index-container{
+    display: flex; 
+    flex-wrap: wrap;
+    background-color:#081120;
+    padding: 1px 1px;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: auto;
+}
+
+.index-container-2{
+  display: flex; 
+  flex-wrap: nowrap;
+  background-color:#081120;
+  padding: 1px 1px;
+  justify-content: center;
+  max-width: 100%;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+
+
+.introheading {
+  font-family: 'STIX Two Text', serif;
+    font-size: 8vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 2.0rem;
+}
+
+.introheading-2 {
+  font-family: 'STIX Two Text', serif;
+  font-size: 8vw;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-top: 2rem;
+  padding-left: 2.0rem;
+}
+
+.introheading2 {
+  font-family: 'STIX Two Text', serif;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 2.0rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.introheading2-2 {
+  font-family: 'STIX Two Text', serif;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 2.0rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.introtext {
+    color: #ddd;
+}
+
+.textoid {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.textoid-2 {
+  font-family: 'Roboto', sans-serif;;
+  font-size: 10px;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
+.img-container {
+  padding: 0rem 0rem;
+}
+.owner{
+    width: 50%;
+    height: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+  }
+
+
+    
+  /* Intro-card-ends */
+
+
+  /* Home banner */
+
+ 
+  
+  /* Home banner ends */
+
+  /* Service menus */
+
+.servicesec{
+  display: block;
+  background-color: #061021;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.servicesec-2{
+  display: block;
+  background-color: #061021;
+  padding-bottom: 1rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.index-services{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.payments{
+  text-align: center;
+}
+
+.howpay{
+  font-family: 'STIX Two Text', serif;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.paylogo{
+  width: 5rem;
+  height: 3rem;
+}
+
+.bookingbut{
+  font-family: 'STIX Two Text', serif;
+  border:2px solid rgb(251, 249, 255) ;
+  color: white;
+  background-color: #081120;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem; 
+  margin-left: 3.8rem;
+ 
+}
+
+.contbut{
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+
+  /* Service menu ends */
+
+/* Gallery */
+
+.galnav{
+  position: relative;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+  z-index: -1;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color:#081120;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+  margin-bottom: 3rem;
+}
+
+.enable, .dots:hover {
+  background-color:#B99C3F;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/* Gallery Ends */
+
+/* Styling for Cards in Index and about */
+
+.serviceintro{
+  display: flex;
+ justify-content: center;
+
+}
+
+.serviceintro-2{
+  display: flex;
+  margin-top: 8rem;
+  justify-content: center;
+ }
+
+.ser{
+  font-family: 'Ephesis', cursive;
+  font-size: 5rem;
+  color: #B99C3F;
+}
+
+.customer-male{
+  font-family: 'STIX Two Text', serif;
+  font-size: 2.5rem;
+  color: #B99C3F;
+}
+
+.customer-selection{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.service-list{
+  font-family: 'STIX Two Text', serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.customer{
+  font-family: 'STIX Two Text', serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.customer:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.customer-selection-services{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.customer-services{
+  font-family: 'STIX Two Text', serif;
+  font-size: 3rem;
+  color: #ffffff;
+  background-color:#081120;
+  border:2px solid rgb(251, 249, 255) ;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+
+.customer-services:hover{
+  background-color: #B99C3F;
+  color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+}
+
+.gif{
+  width: 6rem;
+  height: 6rem;
+}
+/* Styling for Cards in Index and about ends */
+
+/* Mobile Banner */
+
+  .welcome-container{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    margin-top: 15rem;
+  }
+  .welcome-banner{
+    width: 100%;
+    height: auto;
+  }
+
+  .slogan{
+    font-family: 'Oswald-Medium';
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  .wbtn {
+    font-family: 'STIX Two Text', serif;
+    border:2px solid rgb(251, 249, 255) ;
+    color: white;
+    background-color: #081120;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  .wsbtn {
+    font-family: 'STIX Two Text', serif;
+    border:2px solid rgb(251, 249, 255) ;
+    color: white;
+    background-color: #081120;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 3rem;
+  }
+
+  .wbtn:hover {
+    background-color: #B99C3F;
+    color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+  }
+
+  .wsbtn:hover {
+    background-color: #B99C3F;
+    color: #081120;
+    transition-duration: 0.8s;
+    transition-property: background-color;
+  }
+
+  .wsbtn-container{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  /* Desktop */
+  
+
+  @media only screen and (min-width: 600px) {
+
+    .slogan{
+      font-family: 'Oswald-Medium';
+      font-size: 2.5rem;
+      color: rgb(255, 255, 255);
+      margin-top: 7rem;
+      margin-bottom: 2rem;
+    }
+    .me{
+      width: 100%;
+      z-index: 0;
+    }
+    .me2{
+      width: 100%;
+      height: auto;
+      order: 4;
+    }
+    .index-container{
+        display: flex; 
+        flex-wrap: wrap;
+        background-color:#081120;
+        padding: 1px 1px;
+        justify-content: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        height: auto;
+    }
+    
+    .index-container-2{
+      display: flex; 
+      flex-wrap: nowrap;
+      background-color:#081120;
+      padding: 1px 1px;
+      justify-content: center;
+      max-width: 100%;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+      margin-top: 8rem;
+      height: auto;
+    }
+    
+    
+    
+    .introheading {
+      font-family: 'STIX Two Text', serif;
+        font-size: 6vw;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 2rem;
+        padding-left: 2.0rem;
+    }
+    
+    .introheading-2 {
+      font-family: 'STIX Two Text', serif;
+      font-size: 10vw;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding-top: 2rem;
+      padding-left: 2.0rem;
+    }
+    
+    .introheading2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-left: 2.0rem;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .introheading2-2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2.5vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .introtext {
+        color: #ddd;
+    }
+    
+    .textoid {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 2.5rem;
+      padding: 2rem 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .textoid-2 {
+      font-family: 'Roboto', sans-serif;;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: left;
+      padding: 3rem 1rem;
+      padding-top: 1.0rem;
+    }
+    
+    
+    .img-container {
+      padding: 0rem 0rem;
+    }
+    .owner{
+        animation-name: FadeIn;
+        animation-duration: 3s;
+        transition-timing-function: linear;
+        width: 50%;
+        height: 30rem;
+        padding-top: 2rem;
+        
+      }
+      .servicesec{
+        display: block;
+        background-color: #061021;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .servicesec-2{
+        display: block;
+        background-color: #061021;
+        padding-bottom: 1rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+      }
+      .index-services{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      
+      .payments{
+        text-align: center;
+      }
+      
+      .howpay{
+        font-family: 'STIX Two Text', serif;
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+      
+      .paylogo{
+        width: 5rem;
+        height: 3rem;
+      }
+
+      .serviceintro{
+        display: flex;
+       justify-content: center;
+      
+      }
+      
+      .serviceintro-2{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+       }
+      
+      .ser{
+        font-family: 'Ephesis', cursive;
+        font-size: 6rem;
+        color: #B99C3F;
+      }
+      
+      .customer-male{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3.5rem;
+        color: #B99C3F;
+      }
+      
+      .customer-selection{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+      
+      .service-list{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      
+      .customer{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      .customer:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .customer-selection-services{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+      }
+      
+      .customer-services{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      
+      .customer-services:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .gif{
+        width: 8rem;
+        height: 8rem;
+      }
+
+      .bookingbut{
+        font-family: 'STIX Two Text', serif;
+        border:2px solid rgb(251, 249, 255) ;
+        color: white;
+        background-color: #081120;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2rem; 
+        margin-left: 18rem;
+       
+      }
+     
+      .contbut{
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+
+      }
+  }
+
+  @media only screen and (min-width: 900px) {
+
+    .me{
+      display: none;
+      width: 50%;
+    }
+    .welcome-container{
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      top: 0%;
+      margin-top: 30rem;
+      z-index: 1;
+    }
+    .welcome-banner{
+      width: 100%;
+      height: auto;
+      
+    }
+  
+    .slogan{
+      font-family: 'Oswald-Medium';;
+      font-size: 3rem;
+      color: rgb(255, 250, 250);
+      margin-top: 1.5rem;
+    }
+  
+    .wbtn {
+      font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(251, 249, 255) ;
+      color: white;
+      background-color: #081120;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 3rem;
+    }
+  
+    .wsbtn {
+      font-family: 'STIX Two Text', serif;
+      border:2px solid rgb(251, 249, 255) ;
+      color: white;
+      background-color: #081120;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-size: 3rem;
+    }
+  
+    .wbtn:hover {
+      background-color: #B99C3F;
+      color: #081120;
+      transition-duration: 0.8s;
+      transition-property: background-color;
+    }
+  
+    .wsbtn:hover {
+      background-color: #B99C3F;
+      color: #081120;
+      transition-duration: 0.8s;
+      transition-property: background-color;
+    }
+  
+    .wsbtn-container{
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  
+    .me2{ 
+      order: 0;
+      width: 50%;
+     
+    }
+    .index-container{
+        display: flex; 
+        flex-wrap: nowrap;
+        background-color:#081120;
+        padding: 1px 1px;
+        border-radius: 0.5rem;
+        justify-content: center;
+        max-width: 100%;
+        margin:  2rem 2rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        height: auto;
+    }
+    
+    .index-container-2{
+      display: flex; 
+      flex-wrap: nowrap;
+      background-color:#081120;
+      padding: 1px 1px;
+      border-radius: 0.5rem;
+      justify-content: center;
+      max-width: 100%;
+      margin:  2rem 2rem;
+      margin-bottom: 2rem;
+      margin-top: 8rem;
+      height: auto;
+    }
+    
+    .introheading {
+      font-family: 'STIX Two Text', serif;
+        font-size: 4vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-top: 2rem;
+        padding-left: 2.0rem;
+    }
+    
+    .introheading-2 {
+      font-family: 'STIX Two Text', serif;
+      font-size: 4vw;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding-top: 2rem;
+      padding-left: 2.0rem;
+    }
+    
+    .introheading2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 1rem;
+    }
+    .introheading2-2 {
+      font-family: 'STIX Two Text', serif;
+        font-size: 2vw;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        padding-left: 2.0rem;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .introtext {
+        color: #ddd;
+    }
+    
+    .textoid {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: left;
+      padding: 3rem 2.0rem;
+      padding-top: 2.5rem;
+    }
+    
+    .textoid-2 {
+      font-family: 'Roboto', sans-serif;;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: left;
+      padding: 3rem 10rem;
+      padding-left: 2rem;
+      padding-top: 4rem;
+    }
+    
+    
+    
+    .img-container {
+      padding: 0rem 0rem;
+    }
+    .owner{
+        max-width: 50%;
+        height: 30rem;
+        border-radius: 2.2rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .serviceintro{
+        display: flex;
+       justify-content: center;
+      
+      }
+      
+      .serviceintro-2{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: center;
+       }
+      
+      .ser{
+        font-family: 'Ephesis', cursive;
+        font-size: 8rem;
+        color: #B99C3F;
+      }
+      
+      .customer-male{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3.5rem;
+        color: #B99C3F;
+      }
+      
+      .customer-selection{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+      
+      .service-list{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      
+      .customer{
+        font-family: 'STIX Two Text', serif;
+        font-size: 2rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      .customer:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .customer-selection-services{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+      }
+      
+      .customer-services{
+        font-family: 'STIX Two Text', serif;
+        font-size: 3rem;
+        color: #ffffff;
+        background-color:#081120;
+        border:2px solid rgb(251, 249, 255) ;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem 3rem;
+      }
+      
+      .customer-services:hover{
+        background-color: #B99C3F;
+        color: #081120;
+          transition-duration: 0.8s;
+          transition-property: background-color;
+      }
+      
+      .gif{
+        width: 10rem;
+        height: 10rem;
+      }
+
+      .servicesec{
+        background-color: #061021;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin:  2rem 2rem;
+        padding: 1px 1px;
+        border-radius: 0.5rem;
+      }
+      .index-services{
+        display:block;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .dk{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 100rem;
+        transition: transform .7s ease-in-out;
+      }
+      .dk:hover{
+        transform: rotate(360deg);
+      }
+      .bookingbut{
+        font-family: 'STIX Two Text', serif;
+        border:2px solid rgb(251, 249, 255) ;
+        color: white;
+        background-color: #081120;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2rem; 
+        margin-left: 40rem;
+       
+      }
+     
+      .contbut{
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+
+      }
+       .bookingbut:hover{
+        background-color:#B99C3F;
+        border: #B99C3F;
+        color: #081120;
+        transition-duration: 0.7s;
+      }
+  }
+
