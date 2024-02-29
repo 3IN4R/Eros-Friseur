@@ -34,7 +34,7 @@ video{
 /* Hiding video on smaller screens */
 @media only screen and (max-width: 900px) {
 video{
-  display: none;
+  
 }
 }
 
@@ -62,6 +62,16 @@ header {
   background-color: #06102100;
 } 
 
+#headeris{
+  -webkit-transition-delay: 1s;
+    -o-transition-delay: .1s;
+    transition-delay: .1s;
+    -webkit-transition: 1s;
+    -o-transition: .1s;
+    transition: .2s;
+    
+}
+
 
 .logo {
   padding-top: 2px;
@@ -85,7 +95,7 @@ height: auto;
 
 .nav-bar ul li a {
   display: block;
-  color: #B99C3F;
+  color: #ffffff;
   font-size: 20px;
   padding: 10px 25px;
   transition: 0.2s;
@@ -105,6 +115,7 @@ height: auto;
   color: #ffffff;
   background: #B99C3F;
   border-radius: .2rem;
+  
 }
 
 @media only screen and (max-width: 1320px) {
@@ -212,7 +223,7 @@ footer{
 }
 
 .footer-text{
-  text-align: start;
+  text-align: justify;;
 }
 
 .footer-header{
@@ -302,6 +313,8 @@ footer{
 .me{
   width: 100%;
   z-index: 0;
+  filter: blur(2px);
+  display: none;
 }
 .me2{
   width: 100%;
@@ -379,8 +392,11 @@ footer{
   font-size: 18px;
   color: #ffffff;
   text-align: center;
+  padding: 1rem 1.5rem;
   padding-top: 0.5rem;
   margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .textoid-2 {
@@ -397,9 +413,7 @@ footer{
 }
 .owner{
     width: 50%;
-    height: 15rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    height: auto;
     
   }
 
@@ -676,20 +690,20 @@ footer{
     position: absolute;
     z-index: 1;
     top: 0%;
-    margin-top: 15rem;
   }
   .welcome-banner{
     width: 100%;
     height: auto;
+    
   }
 
   .slogan{
-    font-family: 'Oswald-Medium';
-    font-size: 0.9rem;
-    color: rgb(0, 0, 0);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-family: 'STIX Two Text', serif;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: .1rem;
   }
 
   .wbtn {
@@ -741,12 +755,13 @@ footer{
       font-family: 'Oswald-Medium';
       font-size: 2.5rem;
       color: rgb(255, 255, 255);
-      margin-top: 7rem;
+      margin-top: 6rem;
       margin-bottom: 2rem;
     }
     .me{
       width: 100%;
       z-index: 0;
+      filter: blur(5px);
     }
     .me2{
       width: 100%;
@@ -826,8 +841,10 @@ footer{
       color: #ffffff;
       text-align: center;
       padding-top: 2.5rem;
-      padding: 2rem 2rem;
+      padding: 1rem 4rem;
       margin-bottom: 2rem;
+      text-align: justify;
+      text-justify: inter-word;
     }
     
     .textoid-2 {
@@ -849,7 +866,6 @@ footer{
         transition-timing-function: linear;
         width: 50%;
         height: 30rem;
-        padding-top: 2rem;
         
       }
       .servicesec{
@@ -993,6 +1009,8 @@ footer{
         margin-top: 2rem;
 
       }
+
+      
   }
 
   @media only screen and (min-width: 900px) {
@@ -1007,7 +1025,7 @@ footer{
       position: absolute;
       bottom: 0;
       top: 0%;
-      margin-top: 30rem;
+      margin-top: 25rem;
       z-index: 1;
     }
     .welcome-banner{
@@ -1017,10 +1035,10 @@ footer{
     }
   
     .slogan{
-      font-family: 'Oswald-Medium';;
+      font-family: 'STIX Two Text', serif;
       font-size: 3rem;
       color: rgb(255, 250, 250);
-      margin-top: 1.5rem;
+      margin-top: 1.rem;
     }
   
     .wbtn {
@@ -1140,9 +1158,11 @@ footer{
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
       color: #ffffff;
-      text-align: left;
       padding: 3rem 2.0rem;
       padding-top: 2.5rem;
+      text-align: justify;
+      text-justify: inter-word;
+   
     }
     
     .textoid-2 {
@@ -1162,10 +1182,8 @@ footer{
     }
     .owner{
         max-width: 50%;
-        height: 30rem;
+        height: auto;
         border-radius: 2.2rem;
-        padding-left: 1rem;
-        padding-bottom: 1rem;
       }
 
       .serviceintro{
@@ -1301,4 +1319,102 @@ footer{
         transition-duration: 0.7s;
       }
   }
+
+  @media only screen and (max-width: 1200px){
+    .welcome-container{
+      top: 0%;
+    margin-top: 7rem;
+    }
+  }
+
+
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    margin-bottom: 5rem;
+    position: relative;
+    background-color: #081120
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #081120;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
 
